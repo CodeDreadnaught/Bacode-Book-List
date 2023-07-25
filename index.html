@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bacode Book List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container d-flex fd-c ai-c">
+        <div class="app-wrapper">
+            <h1 class="app-heading">Bacode Book List</h1>
+            <form class="app-form">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" class="form-title d-block cus-p" required>
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input type="text" class="form-author d-block cus-p" required>
+                </div>
+                <div>
+                    <label for="isbn">ISBN</label>
+                    <input type="text" class="form-isbn d-block cus-p" required>
+                </div>
+                <div class="submit-section">
+                    <button type="submit" class="d-block cus-p">SUBMIT</button>
+                </div>
+            </form>
+            <table class="d-block">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="book-list"></tbody>
+            </table>
+        </div>
+        <footer>
+            <div class="copyright-section">&copy;2023 Bacode Inc.</div>
+        </footer>
+    </div>
+    <script type="module" src="javascript/app.js"></script>
+</body>
+</html>
